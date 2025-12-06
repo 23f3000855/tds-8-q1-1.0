@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Quarterly Earnings Report</title>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+                <!-- Slide 1: Title & Email -->
+				<section>
+                    <h2>Quarterly Earnings Report</h2>
+                    <p>Technical Consultant</p>
+                    <p>Email: <a href="mailto:23f3000855@ds.study.iitm.ac.in">23f3000855@ds.study.iitm.ac.in</a></p>
+                    <aside class="notes">
+                        Welcome everyone to the quarterly earnings report presentation.
+                        My email is 23f3000855@ds.study.iitm.ac.in.
+                    </aside>
+                </section>
+
+                <!-- Slide 2: Markdown Slide -->
+				<section data-markdown>
+					<textarea data-template>
+						## Agenda (Markdown)
+
+						- Financial Overview
+						- Technical Achievements
+						- Future Outlook
+
+						Note: This slide was written in Markdown using the `data-markdown` attribute.
+					</textarea>
+				</section>
+
+                <!-- Slide 3: Animated Elements (Fragments) -->
+                <section>
+                    <h2>Key Highlights</h2>
+                    <ul>
+                        <li class="fragment">Revenue up by 15%</li>
+                        <li class="fragment">Customer base grew by 10%</li>
+                        <li class="fragment">New product launch successful</li>
+                    </ul>
+                    <aside class="notes">
+                        I will click through these highlights.
+                    </aside>
+                </section>
+
+                <!-- Slide 4: Code Samples -->
+                <section>
+                    <h2>Financial Model Code</h2>
+                    <pre><code data-trim data-noescape class="language-python">
+def calculate_growth(current, previous):
+    """
+    Calculates the growth percentage.
+    """
+    if previous == 0:
+        return 0
+    return ((current - previous) / previous) * 100
+
+# Calculate Q3 Growth
+growth = calculate_growth(115, 100)
+print(f"Growth: {growth}%")
+                    </code></pre>
+                    <aside class="notes">
+                        Here is the Python code used for calculation. Syntax highlighting is enabled.
+                    </aside>
+                </section>
+
+                <!-- Slide 5: Mathematical Equations -->
+                <section>
+                    <h2>Financial Formula</h2>
+                    <p>We analyze the CAGR:</p>
+                    \[ CAGR = \left( \frac{EV}{BV} \right)^{\frac{1}{n}} - 1 \]
+                    <p style="font-size: 0.7em;">
+                        Where \( EV \) is ending value, \( BV \) is beginning value.
+                    </p>
+                    <aside class="notes">
+                        This formula is rendered using the Math plugin.
+                    </aside>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/dist/reveal.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/notes/notes.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/markdown/markdown.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/highlight/highlight.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.0.4/plugin/math/math.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+			});
+		</script>
+	</body>
+</html>
